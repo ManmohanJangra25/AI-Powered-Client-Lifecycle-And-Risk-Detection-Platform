@@ -3,7 +3,7 @@ const axios = require("axios");
 const listModels = async () => {
   try {
     const response = await axios.get(
-      `https://generativelanguage.googleapis.com/v1beta/models?key=${"AIzaSyBb8q0Ji5L-wLNYGzQK6ggdW5ga3RclW00"}`,
+      `https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`,
     );
 
     console.log("\n✅ Available Models:\n");
