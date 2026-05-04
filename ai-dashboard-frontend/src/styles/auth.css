@@ -1,0 +1,101 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 400px;
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+.auth-secondary-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: white;
+}
+
+.auth-divider {
+  text-align: center;
+  margin: 15px 0;
+  color: var(--color-muted);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-input-password {
+  position: relative;
+}
+
+.show_password {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: flex;
+  background: var(--color-muted);
+  right: 10px;
+  top: 9px;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s linear;
+}
+
+.show_password:hover {
+  background: var(--color-primary);
+}
+
+.show_password svg {
+  height: 12px;
+  width: 12px;
+}
+
+.show_password svg path {
+  fill: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
