@@ -5,6 +5,7 @@ const clientRoutes = require("./routes/clientRoutes");
 const projectRoutes = require("./routes/projectRoutes");
 const taskRoutes = require("./routes/taskRoutes");
 const aiRoutes = require("./routes/aiRoutes");
+const dropdownRoutes = require("./routes/dropdownRoutes");
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use("/api/clients", clientRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/ai", aiRoutes);
+app.use("/api/dropdowns", dropdownRoutes);
 
 app.get("/", (req, res) => {
   res.status(200).send("Hello from the backend");
